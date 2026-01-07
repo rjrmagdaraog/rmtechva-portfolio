@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth dark">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Rafael Magdaraog | AI Automation Specialist</title>
+    <meta name="description" content="Portfolio of Rafael Magdaraog - AI Automation Specialist & Product Development Specialist" />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+      tailwind.config = {
+        darkMode: 'class',
+        theme: {
+          extend: {
+            colors: {
+              background: '#050505', // Nearly black
+              surface: '#0f0f0f', // Dark gray for cards
+              surfaceHighlight: '#1a1a1a', // Slightly lighter for hover
+              // Overriding orange to be British Yellow palette
+              orange: {
+                50: '#fffee6',
+                100: '#fffbc2',
+                200: '#fff58a',
+                300: '#ffeb4d',
+                400: '#f9d81d',
+                500: '#edc001', // British Yellow
+                600: '#ca9e00', // Darker for contrast/hover
+                700: '#a17a00',
+                800: '#826005',
+                900: '#6b4d09',
+                950: '#3e2a02',
+              },
+              primary: '#edc001', // British Yellow
+              accent: '#ca9e00', // Darker shade
+              secondary: '#64748b', // Slate 500
+            },
+            fontFamily: {
+              sans: ['Inter', 'sans-serif'],
+            },
+            animation: {
+              'infinite-scroll': 'infinite-scroll 40s linear infinite',
+              'infinite-scroll-reverse': 'infinite-scroll-reverse 40s linear infinite',
+              'fade-in-up': 'fadeInUp 0.8s ease-out forwards',
+              'pulse-slow': 'pulse 4s cubic-bezier(0.4, 0, 0.6, 1) infinite',
+            },
+            keyframes: {
+              'infinite-scroll': {
+                from: { transform: 'translateX(0)' },
+                to: { transform: 'translateX(-100%)' },
+              },
+              'infinite-scroll-reverse': {
+                from: { transform: 'translateX(-100%)' },
+                to: { transform: 'translateX(0)' },
+              },
+              fadeInUp: {
+                '0%': { opacity: '0', transform: 'translateY(20px)' },
+                '100%': { opacity: '1', transform: 'translateY(0)' },
+              }
+            },
+            backgroundImage: {
+              'gradient-radial': 'radial-gradient(var(--tw-gradient-stops))',
+              'hero-glow': 'conic-gradient(from 180deg at 50% 50%, #edc001 0deg, #050505 180deg, #edc001 360deg)',
+            }
+          },
+        },
+      }
+    </script>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+    <style>
+      body {
+        font-family: 'Inter', sans-serif;
+      }
+      /* Hide scrollbar for Chrome, Safari and Opera */
+      .no-scrollbar::-webkit-scrollbar {
+          display: none;
+      }
+      /* Hide scrollbar for IE, Edge and Firefox */
+      .no-scrollbar {
+          -ms-overflow-style: none;  /* IE and Edge */
+          scrollbar-width: none;  /* Firefox */
+      }
+      
+      .text-gradient {
+        background-clip: text;
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+        background-image: linear-gradient(to right, #edc001, #f9d81d);
+      }
+    </style>
+  <script type="importmap">
+{
+  "imports": {
+    "lucide-react": "https://esm.sh/lucide-react@^0.562.0",
+    "react/": "https://esm.sh/react@^19.2.3/",
+    "react": "https://esm.sh/react@^19.2.3",
+    "react-dom/": "https://esm.sh/react-dom@^19.2.3/"
+  }
+}
+</script>
+</head>
+  <body class="bg-gray-50 text-slate-800 dark:bg-[#050505] dark:text-slate-200 antialiased selection:bg-orange-500/30 selection:text-orange-900 transition-colors duration-300">
+    <div id="root"></div>
+  </body>
+</html>
